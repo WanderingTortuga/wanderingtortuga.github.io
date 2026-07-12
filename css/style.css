@@ -25,6 +25,7 @@ a:hover {
     opacity: .75;
 }
 
+
 /* ---------------------------------------------------------
    Header
 --------------------------------------------------------- */
@@ -43,6 +44,7 @@ header h1 {
 header p {
     font-size: 1rem;
 }
+
 
 /* ---------------------------------------------------------
    Navigation
@@ -64,6 +66,7 @@ nav a:hover {
     opacity: .7;
 }
 
+
 /* ---------------------------------------------------------
    Main Content
 --------------------------------------------------------- */
@@ -73,6 +76,7 @@ main {
     margin: 0 auto;
     padding: 45px 20px;
 }
+
 
 /* ---------------------------------------------------------
    Section Titles
@@ -88,8 +92,9 @@ main {
     font-weight: normal;
 }
 
+
 /* ---------------------------------------------------------
-   Gallery Cards
+   Collection Gallery Cards
 --------------------------------------------------------- */
 
 .card-grid {
@@ -107,14 +112,17 @@ main {
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    object-fit: contain;
     display: block;
+    margin-bottom: 15px;
 }
 
 .card h3 {
-    margin-top: 18px;
     font-weight: normal;
+    margin-bottom: 15px;
 }
+
 
 /* ---------------------------------------------------------
    Buttons
@@ -131,6 +139,7 @@ main {
     background: #e8dfcf;
 }
 
+
 /* =========================================================
    SPECIMEN PAGE
 ========================================================= */
@@ -142,7 +151,7 @@ main {
 
 .specimen-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
 
     background: #faf8f2;
@@ -152,8 +161,8 @@ main {
 
 .specimen-image {
     width: 420px;
+    height: 420px;
     max-width: 100%;
-    max-height: 500px;
 
     object-fit: contain;
 
@@ -182,6 +191,7 @@ main {
     min-width: 120px;
 }
 
+
 /* ---------------------------------------------------------
    Footer
 --------------------------------------------------------- */
@@ -193,8 +203,9 @@ footer {
     border-top: 1px solid #d6cebf;
 }
 
+
 /* ---------------------------------------------------------
-   Mobile
+   Mobile Layout
 --------------------------------------------------------- */
 
 @media (max-width: 850px) {
@@ -205,7 +216,7 @@ footer {
 
     .specimen-image {
         width: 100%;
-        max-height: none;
+        height: auto;
     }
 
     nav a {
