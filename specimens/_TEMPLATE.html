@@ -1,0 +1,66 @@
+<!--
+  HOW TO ADD A NEW SPECIMEN — 3 STEPS
+  ------------------------------------
+  1. Copy this file. Rename it to match your next catalog number,
+     e.g. specimens/WT-0002.html
+
+  2. In your new file, replace these 4 things (search for the ALL CAPS words):
+       CATALOG_NUMBER   -> e.g. WT-0002
+       SPECIMEN_NAME    -> e.g. Fire Agate
+       LOCATION         -> e.g. Round Mountain, AZ
+       IMAGE_FILENAME   -> e.g. WT-0002.jpg (must already be uploaded to /images)
+
+  3. Open stones.html, copy one of the existing <div class="card">...</div>
+     blocks in the grid, and update it to point at your new specimen file
+     and image. That's it — don't touch css/style.css for this.
+
+  Optional but good for search engines: add a line for your new specimen
+  to sitemap.xml at the root of the site, copying the existing pattern.
+
+  Delete this comment block in your new file once you've filled it in.
+  Do not delete this template file itself — keep it in /specimens for next time.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<title>CATALOG_NUMBER | Wandering Tortuga Studio</title>
+<meta name="description" content="SPECIMEN_NAME, catalog no. CATALOG_NUMBER, collected in LOCATION. Hand-gathered by Wandering Tortuga Studio.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>SPECIMEN_NAME</h1>
+  <p>Catalog No. CATALOG_NUMBER</p>
+</header>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="../stones.html">Raw Stones</a>
+  <a href="../cabochons.html">Cabochons</a>
+  <a href="../jewelry.html">Jewelry</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="specimen">
+      <img src="../images/IMAGE_FILENAME" alt="SPECIMEN_NAME">
+      <div class="details">
+        <p>Catalog No. CATALOG_NUMBER</p>
+        <p>Collected: LOCATION</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © Wandering Tortuga Studio
+</footer>
+
+</body>
+</html>
