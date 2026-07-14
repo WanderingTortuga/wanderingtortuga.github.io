@@ -249,28 +249,3 @@ footer {
    Specimen Page
 ========================== */
 
-.card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 25px;
-    background: #fffdf8;
-    border: 1px solid #d8d2c5;
-    border-radius: 8px;
-}
-
-.card img {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin: 0 auto 25px auto;
-    border-radius: 6px;
-}
-
-.card h2 {
-    margin-bottom: 20px;
-}
-
-.card p {
-    margin-bottom: 12px;
-    line-height: 1.6;
-}
